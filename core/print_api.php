@@ -713,7 +713,17 @@ function print_category_option_list( $p_category_id = 0, $p_project_id = null ) 
 		$t_category_id = $t_category_row['id'];
 		echo "<option value=\"$t_category_id\"";
 		check_selected( $p_category_id, $t_category_id );
-		echo '>' . string_attribute( category_full_name( $t_category_id, $t_category_row['project_id'] != $t_project_id ) ) . '</option>';
+        /*************************MODIFIED 1/18/2013******************************/
+        //removes Project Name from category drop down on bug_report_page.php
+        $t_category_only_name = string_attribute( category_full_name( $t_category_id, $t_category_row['project_id'] != $t_project_id ) );
+        $pos = strpos($t_category_only_name, "] ");
+        if ( $pos != 0) {
+                $t_category_only_name = substr($t_category_only_name, $pos+2);
+        }
+        echo '>' . $t_category_only_name . '</option>';
+        /*********************END MODIFICATIONS ******************************/
+         
+        echo '>' . string_attribute( category_full_name( $t_category_id, $t_category_row['project_id'] != $t_project_id ) ) . '</option>';
 	}
 }
 
