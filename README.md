@@ -32,3 +32,5 @@ refer to mantis_setup_v.3.0.xlsx -> Standard Fields Customization tab
     - Update enum
     - Translation
     - Workflow
+    
+### 7: Update Config paraméters
