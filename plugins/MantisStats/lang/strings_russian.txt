@@ -1,0 +1,167 @@
+<?php
+
+# MantisStats - a statistics plugin for MantisBT
+#
+# Copyright (c) MantisStats.Org
+#
+# MantsStats is free for use, but is not open-source software. A copy of
+# License was delivered to you during the software download. See LICENSE file.
+#
+# MantisStats is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See License for more
+# details.
+#
+# https://www.mantisstats.org
+
+$s_plugin_MantisStats_title                 = 'MantisStats';
+$s_plugin_MantisStats_description           = 'Плагин статистики для MantisBT';
+$s_plugin_MantisStats_configuration         = 'MantisStats: настройка';
+$s_plugin_MantisStats_default_report        = 'Репорт по умолчанию:';
+$s_plugin_MantisStats_reports               = 'Репорты';
+$s_plugin_MantisStats_charts                = 'Графики';
+$s_plugin_MantisStats_render_using          = 'Показывать графики с помощью:';
+$s_plugin_MantisStats_data_tables           = 'Таблицы данных';
+$s_plugin_MantisStats_nrows_intables        = 'Количество строк в таблицах:';
+$s_plugin_MantisStats_xrows                 = 'строк';
+$s_plugin_MantisStats_recommended           = 'рекомендуется';
+$s_plugin_MantisStats_runtime               = 'Время выполнения репортов';
+$s_plugin_MantisStats_runtime_sh            = 'Показывать/спрятать время выполнения репортов:';
+$s_plugin_MantisStats_runtime_show          = 'Показывать';
+$s_plugin_MantisStats_runtime_hide          = 'Спрятать';
+$s_plugin_MantisStats_runtime_string        = 'Время выполнения репорта: %1$s секунд.';
+$s_plugin_MantisStats_rendering_1           = 'Только Flash, если нет то HTML5/JavaScript';
+$s_plugin_MantisStats_rendering_2           = 'Только Flash';
+$s_plugin_MantisStats_rendering_3           = 'Только HTML5/JavaScript';
+$s_plugin_MantisStats_rendering_4           = 'Не отображать графики';
+$s_plugin_MantisStats_configuration         = 'Конфигурация';
+$s_plugin_MantisStats_trends                = 'Тенденции';
+$s_plugin_MantisStats_people                = 'Люди';
+$s_plugin_MantisStats_issues                = 'Инциденты';
+$s_plugin_MantisStats_gen_settigs           = 'Общие параметры';
+$s_plugin_MantisStats_save_config           = 'Сохранить конфигурацию';
+$s_plugin_MantisStats_recby_youradmin       = 'рекомендуется вашим администратором MantisBT';
+$s_plugin_MantisStats_project               = 'Проект';
+$s_plugin_MantisStats_by_project            = 'По проекту';
+$s_plugin_MantisStats_by_project_long       = 'Инциденты по проекту';
+$s_plugin_MantisStats_by_status             = 'По состоянию';
+$s_plugin_MantisStats_by_status_long        = 'Инциденты по состоянию';
+$s_plugin_MantisStats_by_reprod             = 'По воспроизводимости';
+$s_plugin_MantisStats_by_reprod_long        = 'Инциденты по воспроизводимости';
+$s_plugin_MantisStats_by_severity           = 'По серьезности';
+$s_plugin_MantisStats_by_severity_long      = 'Инциденты по серьезности';
+$s_plugin_MantisStats_by_priority           = 'По приоритету';
+$s_plugin_MantisStats_by_priority_long      = 'Инциденты по приоритету';
+$s_plugin_MantisStats_by_resol              = 'По решению';
+$s_plugin_MantisStats_by_resol_long         = 'Инциденты по решению';
+$s_plugin_MantisStats_by_category           = 'По категории';
+$s_plugin_MantisStats_by_category_long      = 'Инциденты по категории';
+$s_plugin_MantisStats_waiting_times         = 'Время ожидания';
+$s_plugin_MantisStats_monitoring_stats      = 'Отслеживаемость';
+$s_plugin_MantisStats_handler_stats         = 'Обрабатывающие';
+$s_plugin_MantisStats_notes_stats           = 'Комментарии';
+$s_plugin_MantisStats_tag_stats             = 'Статистика меток';
+$s_plugin_MantisStats_handlers              = 'Обрабатывающие';
+$s_plugin_MantisStats_handlers_current      = 'Обрабатывающие: текущие';
+$s_plugin_MantisStats_handlers_all          = 'Обрабатывающие: все';
+$s_plugin_MantisStats_reporters             = 'Инициаторы';
+$s_plugin_MantisStats_monitors              = 'Отслеживающие';
+$s_plugin_MantisStats_open_vs_res           = 'Открытые vs. Решенные';
+$s_plugin_MantisStats_open_vs_res_long      = 'Открытые vs. Решенные инциденты';
+$s_plugin_MantisStats_timeframe             = 'Для инцидентов созданных между';
+$s_plugin_MantisStats_timeframe_op_re       = 'Для инцидентов созданных/решённых между';
+$s_plugin_MantisStats_display               = 'Показать';
+$s_plugin_MantisStats_priv_proj_skip        = 'Проекты с ОГРАНИЧЕННЫМ доступом могут быть пропущены в зависимости от уровня доступа вашего акаунта.';
+$s_plugin_MantisStats_priv_iss_skip         = 'Инциденты с ОГРАНИЧЕННЫМ доступом могут быть пропущены в зависимости от уровня доступа вашего акаунта.';
+$s_plugin_MantisStats_charts_maxdisp        = 'Графики показывают топ %1$s ненулевыx значений.';
+$s_plugin_MantisStats_open_issues           = 'Открытые инциденты';
+$s_plugin_MantisStats_resolved_issues       = 'Решенные инциденты';
+$s_plugin_MantisStats_open_iss_chrt         = 'График открытых инцидентов';
+$s_plugin_MantisStats_resolved_iss_chrt     = 'График решенных инцидентов';
+$s_plugin_MantisStats_smt_missing           = 'Если вы не в состоянии увидеть график значит чего-то не хватает в вашем браузере.';
+$s_plugin_MantisStats_project_name          = 'Название проекта';
+$s_plugin_MantisStats_total                 = 'итог';
+$s_plugin_MantisStats_grand_total           = 'Общий итог:';
+$s_plugin_MantisStats_paging                = 'Страницы:';
+$s_plugin_MantisStats_by_issues_chart       = 'График всех инцидентов по состоянию';
+$s_plugin_MantisStats_all_issues            = 'Все инциденты';
+$s_plugin_MantisStats_by_reprod_chart       = 'График всех инцидентов по воспроизводимости';
+$s_plugin_MantisStats_by_severity_chart     = 'График всех инцидентов по серьезности';
+$s_plugin_MantisStats_by_priority_chart     = 'График всех инцидентов по приоритету';
+$s_plugin_MantisStats_by_resol_chart        = 'График всех инцидентов по решению';
+$s_plugin_MantisStats_by_category_open      = 'График открытых инцидентов (Парето)';
+$s_plugin_MantisStats_by_category_res       = 'График решенных инцидентов (Парето)';
+$s_plugin_MantisStats_longest_time          = 'Наибольшее время';
+$s_plugin_MantisStats_average_time          = 'Среднее время';
+$s_plugin_MantisStats_summary_table         = 'Сводная таблица';
+$s_plugin_MantisStats_top_monitored_op      = 'Наиболее отслеживаемые открытые инциденты';
+$s_plugin_MantisStats_top_monitored_res     = 'Наиболее отслеживаемые решенные инциденты';
+$s_plugin_MantisStats_mostmon_in_single     = 'Наибольшее количество отслеживающих в одном инциденте';
+$s_plugin_MantisStats_in_open_issues        = 'В открытых инцидентах';
+$s_plugin_MantisStats_in_resolved_iss       = 'В решенных инцидентах';
+$s_plugin_MantisStats_in_all_issues         = 'Во всех инцидентах';
+$s_plugin_MantisStats_average_monitors      = 'Среднее количество отслеживающих в одном инциденте';
+$s_plugin_MantisStats_with_no_monitors      = 'Инциденты без отслеживающих';
+$s_plugin_MantisStats_issue_summary         = 'Суть инцидента';
+$s_plugin_MantisStats_no_of_monitors        = 'Количество отслеживающих';
+$s_plugin_MantisStats_all_with_without      = 'График всех инцидентов с/без отслеживающими(-их)';
+$s_plugin_MantisStats_with_monitors         = 'с отслеживающими';
+$s_plugin_MantisStats_without_monitors      = 'без отслеживающих';
+$s_plugin_MantisStats_mosthnd_in_single     = 'Наибольшее количество обрабатывающих в одном инциденте';
+$s_plugin_MantisStats_average_handlers      = 'Среднее количество обрабатывающих в одном инциденте';
+$s_plugin_MantisStats_never_assto_hnd       = 'Количество инцидентов никогда не назначенных обрабатывающему';
+$s_plugin_MantisStats_currently_no_hnd      = 'Количество инцидентов не назначенных обрабатывающему на данный момент';
+$s_plugin_MantisStats_iss_open_top_hnd      = 'Открытые инциденты с наибольшим количеством обрабатывающих';
+$s_plugin_MantisStats_iss_res_top_hnd       = 'Решенные инциденты с наибольшим количеством обрабатывающих';
+$s_plugin_MantisStats_no_of_handlers        = 'Количество обрабатывающих';
+$s_plugin_MantisStats_mostnt_in_single      = 'Наибольшее количество комментариев в одном инциденте';
+$s_plugin_MantisStats_average_nt_periss     = 'Среднее количество комментариев в одном инциденте';
+$s_plugin_MantisStats_no_iss_without_nt     = 'Количество инцидентов без комментариев';
+$s_plugin_MantisStats_iss_open_top_nt       = 'Открытые инциденты с наибольшим количеством комментариев';
+$s_plugin_MantisStats_iss_res_top_nt        = 'Решенные инциденты с наибольшим количеством комментариев';
+$s_plugin_MantisStats_no_of_notes           = 'Количество комментариев';
+$s_plugin_MantisStats_handler_name          = 'Имя обрабатывающего';
+$s_plugin_MantisStats_reporter_name         = 'Имя инициатора';
+$s_plugin_MantisStats_top_monitors          = 'Наиболее активные отслеживающие';
+$s_plugin_MantisStats_name                  = 'Имя';
+$s_plugin_MantisStats_mon_open_issues       = 'Отслеживание открытых инцидентов';
+$s_plugin_MantisStats_mon_res_issues        = 'Отслеживание решенных инцидентов';
+$s_plugin_MantisStats_mon_all_issues        = 'Отслеживание всех инцидентов';
+$s_plugin_MantisStats_top_mon_chart         = 'График наиболее активных отслеживающих';
+$s_plugin_MantisStats_top_note_adders       = 'Наиболее активные комментаторы';
+$s_plugin_MantisStats_notes_open_issues     = 'Комментарии в открытых инцидентах';
+$s_plugin_MantisStats_notes_res_issues      = 'Комментарии в решённых инцидентах';
+$s_plugin_MantisStats_notes_all_issues      = 'Комментарии во всех инцидентах';
+$s_plugin_MantisStats_top_note_add_chrt     = 'График наиболее активных комментаторов';
+$s_plugin_MantisStats_by_date               = 'По дате';
+$s_plugin_MantisStats_daily                 = 'По дням';
+$s_plugin_MantisStats_weekly                = 'По неделям';
+$s_plugin_MantisStats_monthly               = 'По месяцам';
+$s_plugin_MantisStats_yearly                = 'По годам';
+$s_plugin_MantisStats_open_vs_res_chrt      = 'График открытых vs. решенных инцидентов';
+$s_plugin_MantisStats_notes                 = 'Комментарии';
+$s_plugin_MantisStats_notes_chart           = 'График комментариев';
+$s_plugin_MantisStats_res_radio_opt1        = '\'Решена\' показывает решение инцидентов открытых и решённых между датами наверху';
+$s_plugin_MantisStats_res_radio_opt2        = '\'Решена\' показывает решение инцидентов между датами наверху без ограничения времени их открытия';
+$s_plugin_MantisStats_note_wout_reop        = 'Если считать как один множественные решения одного и того же инцидента вследствие повторных открытий.';
+$s_plugin_MantisStats_week_short            = 'нед.';
+$s_plugin_MantisStats_unknown               = 'Неизвестный';
+$s_plugin_MantisStats_novalue               = 'Нет значения';
+$s_plugin_MantisStats_by_custom_field       = 'По настраиваему полю';
+$s_plugin_MantisStats_by_custom_fields      = 'По настраиваемым полям';
+$s_plugin_MantisStats_by_custom_fields_long = 'Инциденты по настраиваемым полям';
+$s_plugin_MantisStats_by_etc                = 'Инциденты по настраиваему полю &quot;%1$s&quot;';
+$s_plugin_MantisStats_by_etc_chart          = 'График всех инцидентов по настраиваему полю &quot;%1$s&quot;';
+$s_plugin_MantisStats_by_custom_fields_chrt = 'График всех инцидентов по настраиваемым полям';
+$s_plugin_MantisStats_granularity           = 'Зернистость';
+$s_plugin_MantisStats_info_handler_current  = 'Этот репорт показывает кол-во инцидентов назначенных конкретному обрабатывающему.';
+$s_plugin_MantisStats_info_handler_all      = 'Этот репорт показывает сколько раз инциденты были (пере-)назначены конкретному обрабатывающему.';
+$s_plugin_MantisStats_times                 = 'Время';
+$s_plugin_MantisStats_time_new_pr_sv        = 'В состоянии \'новый\'';
+$s_plugin_MantisStats_time_new_pr_sv_long   = 'Время в состоянии \'новый\'';
+$s_plugin_MantisStats_time_new_top1         = 'Инциденты без изменения состояния';
+$s_plugin_MantisStats_time_new_top2         = 'Инциденты с изменённым состоянием';
+$s_plugin_MantisStats_info_waiting_new      = 'Времена в состоянии \'новый\' для вновь открытых инцидентов суммируются.';
+$s_plugin_MantisStats_assigned_time         = 'Время в состоянии \'назначен\'';
+$s_plugin_MantisStats_no_of_issues          = 'Количество инцидентов';
+$s_plugin_MantisStats_avg_time_in_assigned  = 'Среднее время в состоянии \'назначен\'';

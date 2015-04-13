@@ -1,0 +1,167 @@
+<?php
+
+# MantisStats - a statistics plugin for MantisBT
+#
+# Copyright (c) MantisStats.Org
+#
+# MantsStats is free for use, but is not open-source software. A copy of
+# License was delivered to you during the software download. See LICENSE file.
+#
+# MantisStats is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See License for more
+# details.
+#
+# https://www.mantisstats.org
+
+$s_plugin_MantisStats_title                 = 'MantisStats';
+$s_plugin_MantisStats_description           = 'Mantis Statistics Plugin';
+$s_plugin_MantisStats_configuration         = 'MantisStats: configuration';
+$s_plugin_MantisStats_default_report        = 'Default Report:';
+$s_plugin_MantisStats_reports               = 'Repports';
+$s_plugin_MantisStats_charts                = 'Charts';
+$s_plugin_MantisStats_render_using          = 'Render charts using:';
+$s_plugin_MantisStats_data_tables           = 'Data tables';
+$s_plugin_MantisStats_nrows_intables        = 'Number of rows in tables:';
+$s_plugin_MantisStats_xrows                 = 'rows';
+$s_plugin_MantisStats_recommended           = 'recommended';
+$s_plugin_MantisStats_runtime               = 'Run-time of reports';
+$s_plugin_MantisStats_runtime_sh            = 'Show/hide reports run-time:';
+$s_plugin_MantisStats_runtime_show          = 'Show';
+$s_plugin_MantisStats_runtime_hide          = 'Hide';
+$s_plugin_MantisStats_runtime_string        = 'Script running time: %1$s seconds.';
+$s_plugin_MantisStats_rendering_1           = 'Flash, if not present failover to HTML5/JavaScript';
+$s_plugin_MantisStats_rendering_2           = 'Only Flash';
+$s_plugin_MantisStats_rendering_3           = 'Only HTML5/JavaScript';
+$s_plugin_MantisStats_rendering_4           = 'Do not render charts';
+$s_plugin_MantisStats_configuration         = 'Configuration';
+$s_plugin_MantisStats_trends                = 'Trends';
+$s_plugin_MantisStats_people                = 'People';
+$s_plugin_MantisStats_issues                = 'Issues';
+$s_plugin_MantisStats_gen_settigs           = 'General settings';
+$s_plugin_MantisStats_save_config           = 'Save configuration';
+$s_plugin_MantisStats_recby_youradmin       = 'recommended by your MantisBT administrator';
+$s_plugin_MantisStats_project               = 'Project';
+$s_plugin_MantisStats_by_project            = 'By project';
+$s_plugin_MantisStats_by_project_long       = 'Issues by project';
+$s_plugin_MantisStats_by_status             = 'By status';
+$s_plugin_MantisStats_by_status_long        = 'Issues by status';
+$s_plugin_MantisStats_by_reprod             = 'By reproducibility';
+$s_plugin_MantisStats_by_reprod_long        = 'Issues by reproducibility';
+$s_plugin_MantisStats_by_severity           = 'By severity';
+$s_plugin_MantisStats_by_severity_long      = 'Issues by severity';
+$s_plugin_MantisStats_by_priority           = 'By priority';
+$s_plugin_MantisStats_by_priority_long      = 'Issues by priority';
+$s_plugin_MantisStats_by_resol              = 'By resolution';
+$s_plugin_MantisStats_by_resol_long         = 'Issues by resolution';
+$s_plugin_MantisStats_by_category           = 'By category';
+$s_plugin_MantisStats_by_category_long      = 'Issues by category';
+$s_plugin_MantisStats_waiting_times         = 'Waiting times';
+$s_plugin_MantisStats_monitoring_stats      = 'Monitoring stats';
+$s_plugin_MantisStats_handler_stats         = 'Handler stats';
+$s_plugin_MantisStats_notes_stats           = 'Notes stats';
+$s_plugin_MantisStats_tag_stats             = 'Tag stats';
+$s_plugin_MantisStats_handlers              = 'Handler stats';
+$s_plugin_MantisStats_handlers_current      = 'Handler stats: current';
+$s_plugin_MantisStats_handlers_all          = 'Handler stats: all';
+$s_plugin_MantisStats_monitors              = 'Monitors';
+$s_plugin_MantisStats_reporters             = 'Reporters';
+$s_plugin_MantisStats_open_vs_res           = 'Opened vs. resolved';
+$s_plugin_MantisStats_open_vs_res_long      = 'Opened vs. resolved issues';
+$s_plugin_MantisStats_timeframe             = 'For issues reported between';
+$s_plugin_MantisStats_timeframe_op_re       = 'For issues reported/resolved between';
+$s_plugin_MantisStats_display               = 'Display';
+$s_plugin_MantisStats_priv_proj_skip        = 'Private projects may be skipped depending on your account permissions level.';
+$s_plugin_MantisStats_priv_iss_skip         = 'Private issues may be skipped depending on your account permissions level.';
+$s_plugin_MantisStats_charts_maxdisp        = 'Charts display top %1$s non-null entries.';
+$s_plugin_MantisStats_open_issues           = 'Open issues';
+$s_plugin_MantisStats_resolved_issues       = 'Resolved issues';
+$s_plugin_MantisStats_open_iss_chrt         = 'Open issues chart';
+$s_plugin_MantisStats_resolved_iss_chrt     = 'Resolved issues chart';
+$s_plugin_MantisStats_smt_missing           = 'If you\'re unable to see the chart then something is missing in your browser.';
+$s_plugin_MantisStats_project_name          = 'Project name';
+$s_plugin_MantisStats_total                 = 'total';
+$s_plugin_MantisStats_grand_total           = 'Grand total:';
+$s_plugin_MantisStats_paging                = 'Paging:';
+$s_plugin_MantisStats_by_issues_chart       = 'All issues by status chart';
+$s_plugin_MantisStats_all_issues            = 'All issues';
+$s_plugin_MantisStats_by_reprod_chart       = 'All issues by reproducibility chart';
+$s_plugin_MantisStats_by_severity_chart     = 'All issues by severity chart';
+$s_plugin_MantisStats_by_priority_chart     = 'All issues by priority chart';
+$s_plugin_MantisStats_by_resol_chart        = 'All issues by resolution chart';
+$s_plugin_MantisStats_by_category_open      = 'Open issues (Pareto) chart';
+$s_plugin_MantisStats_by_category_res       = 'Resolved issues (Pareto) chart';
+$s_plugin_MantisStats_longest_time          = 'Longest';
+$s_plugin_MantisStats_average_time          = 'Average';
+$s_plugin_MantisStats_summary_table         = 'Summary table';
+$s_plugin_MantisStats_top_monitored_op      = 'Top monitored open issues';
+$s_plugin_MantisStats_top_monitored_res     = 'Top monitored resolved issues';
+$s_plugin_MantisStats_mostmon_in_single     = 'Most monitors in single issue';
+$s_plugin_MantisStats_in_open_issues        = 'In open issues';
+$s_plugin_MantisStats_in_resolved_iss       = 'In resolved issues';
+$s_plugin_MantisStats_in_all_issues         = 'In all issues';
+$s_plugin_MantisStats_average_monitors      = 'Average monitors per issue';
+$s_plugin_MantisStats_with_no_monitors      = 'Issues with no monitors';
+$s_plugin_MantisStats_issue_summary         = 'Issue summary';
+$s_plugin_MantisStats_no_of_monitors        = 'Number of monitors';
+$s_plugin_MantisStats_all_with_without      = 'All issues with/without monitors chart';
+$s_plugin_MantisStats_with_monitors         = 'with monitors';
+$s_plugin_MantisStats_without_monitors      = 'without monitors';
+$s_plugin_MantisStats_mosthnd_in_single     = 'Most handlers in single issue';
+$s_plugin_MantisStats_average_handlers      = 'Average number of handlers per issue';
+$s_plugin_MantisStats_never_assto_hnd       = 'Number of issues never assigned to a handler';
+$s_plugin_MantisStats_currently_no_hnd      = 'Number of issues currently with no handler';
+$s_plugin_MantisStats_iss_open_top_hnd      = 'Top open issues with most handlers';
+$s_plugin_MantisStats_iss_res_top_hnd       = 'Top resolved issues with most handlers';
+$s_plugin_MantisStats_no_of_handlers        = 'Number of handlers';
+$s_plugin_MantisStats_mostnt_in_single      = 'Most notes in single issue';
+$s_plugin_MantisStats_average_nt_periss     = 'Average number of notes per issue';
+$s_plugin_MantisStats_no_iss_without_nt     = 'Number of issues without notes';
+$s_plugin_MantisStats_iss_open_top_nt       = 'Top open issues with most notes';
+$s_plugin_MantisStats_iss_res_top_nt        = 'Top resolved issues with most notes';
+$s_plugin_MantisStats_no_of_notes           = 'Number of notes';
+$s_plugin_MantisStats_handler_name          = 'Handler name';
+$s_plugin_MantisStats_reporter_name         = 'Reporter name';
+$s_plugin_MantisStats_top_monitors          = 'Top monitors';
+$s_plugin_MantisStats_name                  = 'Name';
+$s_plugin_MantisStats_mon_open_issues       = 'Monitoring open issues';
+$s_plugin_MantisStats_mon_res_issues        = 'Monitoring resolved issues';
+$s_plugin_MantisStats_mon_all_issues        = 'Monitoring all issues';
+$s_plugin_MantisStats_top_mon_chart         = 'Top monitors chart';
+$s_plugin_MantisStats_top_note_adders       = 'Top note adders';
+$s_plugin_MantisStats_notes_open_issues     = 'Notes in open issues';
+$s_plugin_MantisStats_notes_res_issues      = 'Notes in resolved issues';
+$s_plugin_MantisStats_notes_all_issues      = 'Notes in all issues';
+$s_plugin_MantisStats_top_note_add_chrt     = 'Top note adders chart';
+$s_plugin_MantisStats_by_date               = 'By date';
+$s_plugin_MantisStats_daily                 = 'Daily';
+$s_plugin_MantisStats_weekly                = 'Weekly';
+$s_plugin_MantisStats_monthly               = 'Monthly';
+$s_plugin_MantisStats_yearly                = 'Yearly';
+$s_plugin_MantisStats_open_vs_res_chrt      = 'Opened vs. resolved issues chart';
+$s_plugin_MantisStats_notes                 = 'Notes';
+$s_plugin_MantisStats_notes_chart           = 'Notes chart';
+$s_plugin_MantisStats_res_radio_opt1        = '\'Resolved\' shows resolution of issues reported and resolved between dates above';
+$s_plugin_MantisStats_res_radio_opt2        = '\'Resolved\' shows resolution of issues between dates above without limiting their reporting dates';
+$s_plugin_MantisStats_note_wout_reop        = 'If counting as one multiple resolutions of the same issue due to re-openings.';
+$s_plugin_MantisStats_week_short            = 'wk.';
+$s_plugin_MantisStats_unknown               = 'Unknown';
+$s_plugin_MantisStats_novalue               = 'No value';
+$s_plugin_MantisStats_by_custom_field       = 'By custom field';
+$s_plugin_MantisStats_by_custom_fields      = 'By custom fields';
+$s_plugin_MantisStats_by_custom_fields_long = 'Issues by custom fields';
+$s_plugin_MantisStats_by_etc                = 'Issues by &quot;%1$s&quot; custom field';
+$s_plugin_MantisStats_by_etc_chart          = 'All issues by &quot;%1$s&quot; custom field chart';
+$s_plugin_MantisStats_by_custom_fields_chrt = 'All issues by custom fields chart';
+$s_plugin_MantisStats_granularity           = 'Granularity';
+$s_plugin_MantisStats_info_handler_current  = 'This report shows number of issues currently assigned to an individual handler.';
+$s_plugin_MantisStats_info_handler_all      = 'This report shows number of times issues were (re-)assigned to an individual handler.';
+$s_plugin_MantisStats_times                 = 'Times';
+$s_plugin_MantisStats_time_new_pr_sv        = 'In \'new\' state';
+$s_plugin_MantisStats_time_new_pr_sv_long   = 'Time in \'new\' state';
+$s_plugin_MantisStats_time_new_top1         = 'Issues without status change';
+$s_plugin_MantisStats_time_new_top2         = 'Issues with status change';
+$s_plugin_MantisStats_info_waiting_new      = 'Times in \'new\' state for for reopened tickets (re-set to \'new\') are summed-up.';
+$s_plugin_MantisStats_assigned_time         = 'Time in \'assigned\'';
+$s_plugin_MantisStats_no_of_issues          = 'No of issues';
+$s_plugin_MantisStats_avg_time_in_assigned  = 'Average time in \'assigned\'';

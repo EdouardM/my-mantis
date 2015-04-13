@@ -1,0 +1,167 @@
+<?php
+
+# MantisStats - a statistics plugin for MantisBT
+#
+# Copyright (c) MantisStats.Org
+#
+# MantsStats is free for use, but is not open-source software. A copy of
+# License was delivered to you during the software download. See LICENSE file.
+#
+# MantisStats is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See License for more
+# details.
+#
+# https://www.mantisstats.org
+
+$s_plugin_MantisStats_title                 = 'MantisStats';
+$s_plugin_MantisStats_description           = 'Plugin statistique pour MantisBT';
+$s_plugin_MantisStats_configuration         = 'MantisStats: configuration';
+$s_plugin_MantisStats_default_report        = 'Rapport par défaut:';
+$s_plugin_MantisStats_reports               = 'Rapports';
+$s_plugin_MantisStats_charts                = 'Graphiques';
+$s_plugin_MantisStats_render_using          = 'Afficher les graphiques à l\'aide de:';
+$s_plugin_MantisStats_data_tables           = 'Tables de données';
+$s_plugin_MantisStats_nrows_intables        = 'Nombre de lignes dans les tables:';
+$s_plugin_MantisStats_xrows                 = 'lignes';
+$s_plugin_MantisStats_recommended           = 'recommandé';
+$s_plugin_MantisStats_runtime               = 'Run-time de rapports';
+$s_plugin_MantisStats_runtime_sh            = 'Temps d\'exécution des rapports affichés / masqués:';
+$s_plugin_MantisStats_runtime_show          = 'Afficher';
+$s_plugin_MantisStats_runtime_hide          = 'Masquer';
+$s_plugin_MantisStats_runtime_string        = 'Temps d\'exécution du rapport: %1$s secondes';
+$s_plugin_MantisStats_rendering_1           = 'Flash s\'il n\'est pas présent basculement à HTML5/JavaScript';
+$s_plugin_MantisStats_rendering_2           = 'Seulement Flash';
+$s_plugin_MantisStats_rendering_3           = 'Seulement HTML5/JavaScript';
+$s_plugin_MantisStats_rendering_4           = 'Ne pas afficher les graphiques';
+$s_plugin_MantisStats_configuration         = 'Configuration';
+$s_plugin_MantisStats_trends                = 'Tendances';
+$s_plugin_MantisStats_people                = 'Personnes';
+$s_plugin_MantisStats_issues                = 'Bogues';
+$s_plugin_MantisStats_gen_settigs           = 'Paramètres généraux';
+$s_plugin_MantisStats_save_config           = 'Sauvegarder la configuration';
+$s_plugin_MantisStats_recby_youradmin       = 'recommandé par votre administrateur MantisBT';
+$s_plugin_MantisStats_project               = 'Projet';
+$s_plugin_MantisStats_by_project            = 'Par projet';
+$s_plugin_MantisStats_by_project_long       = 'Bogues par projet';
+$s_plugin_MantisStats_by_status             = 'Par statut';
+$s_plugin_MantisStats_by_status_long        = 'Bogues par statut';
+$s_plugin_MantisStats_by_reprod             = 'Par reproductibilité';
+$s_plugin_MantisStats_by_reprod_long        = 'Bogues par reproductibilité';
+$s_plugin_MantisStats_by_severity           = 'Par sévérité';
+$s_plugin_MantisStats_by_severity_long      = 'Bogues par sévérité';
+$s_plugin_MantisStats_by_priority           = 'Par priorité';
+$s_plugin_MantisStats_by_priority_long      = 'Bogues par priorité';
+$s_plugin_MantisStats_by_resol              = 'Par résolution';
+$s_plugin_MantisStats_by_resol_long         = 'Bogues par résolution';
+$s_plugin_MantisStats_by_category           = 'Par catégorie';
+$s_plugin_MantisStats_by_category_long      = 'Bogues par catégorie';
+$s_plugin_MantisStats_waiting_times         = 'Temps de réponse';
+$s_plugin_MantisStats_monitoring_stats      = 'Statistiques de surveillance de bogues';
+$s_plugin_MantisStats_handler_stats         = 'Statistiques par responsable de bogues';
+$s_plugin_MantisStats_notes_stats           = 'Statistiques par notes';
+$s_plugin_MantisStats_tag_stats             = 'Statistiques de balises';
+$s_plugin_MantisStats_handlers              = 'Responsables';
+$s_plugin_MantisStats_handlers_current      = 'Responsables: courant';
+$s_plugin_MantisStats_handlers_all          = 'Responsables: tous';
+$s_plugin_MantisStats_reporters             = 'Rapporteurs';
+$s_plugin_MantisStats_monitors              = 'Moniteurs';
+$s_plugin_MantisStats_open_vs_res           = 'Ouvert vs. Résolu';
+$s_plugin_MantisStats_open_vs_res_long      = 'Ouvert vs. Résolu bogues';
+$s_plugin_MantisStats_timeframe             = 'Pour les bogues signalés entre';
+$s_plugin_MantisStats_timeframe_op_re       = 'Pour les bogues signalés/résolus entre';
+$s_plugin_MantisStats_display               = 'Afficher';
+$s_plugin_MantisStats_priv_proj_skip        = 'Les projets privés peuvent être ignorés en fonction de votre niveau compte des autorisations.';
+$s_plugin_MantisStats_priv_iss_skip         = 'Questions privées peuvent être ignorés en fonction de votre niveau compte des autorisations.';
+$s_plugin_MantisStats_charts_maxdisp        = 'Graphiques présentant le top %1$s des entrées non nulles.';
+$s_plugin_MantisStats_open_issues           = 'Bogues Ouverts';
+$s_plugin_MantisStats_resolved_issues       = 'Bogues Résolus';
+$s_plugin_MantisStats_open_iss_chrt         = 'Bogues Ouverts';
+$s_plugin_MantisStats_resolved_iss_chrt     = 'Bogues Résolus';
+$s_plugin_MantisStats_smt_missing           = 'Paramétrage navigateur manquant pour générer le graphique .';
+$s_plugin_MantisStats_project_name          = 'Nom du projet';
+$s_plugin_MantisStats_total                 = 'Total';
+$s_plugin_MantisStats_grand_total           = 'Total Général:';
+$s_plugin_MantisStats_paging                = 'Pagination:';
+$s_plugin_MantisStats_by_issues_chart       = 'Graphique par statut:';
+$s_plugin_MantisStats_all_issues            = 'Tous les bogues';
+$s_plugin_MantisStats_by_reprod_chart       = 'Graphique par reproductibilité:';
+$s_plugin_MantisStats_by_severity_chart     = 'Graphique par sévérité:';
+$s_plugin_MantisStats_by_priority_chart     = 'Graphique par priorité:';
+$s_plugin_MantisStats_by_resol_chart        = 'Graphique par résolution:';
+$s_plugin_MantisStats_by_category_open      = 'Graphique par catégorie sur bogues ouverts';
+$s_plugin_MantisStats_by_category_res       = 'Graphique par catégorie sur bogues résolus';
+$s_plugin_MantisStats_longest_time          = 'Temps maximal';
+$s_plugin_MantisStats_average_time          = 'Temps moyen';
+$s_plugin_MantisStats_summary_table         = 'Tableau récapitulatif';
+$s_plugin_MantisStats_top_monitored_op      = 'Liste des bogues ouverts et surveillés';
+$s_plugin_MantisStats_top_monitored_res     = 'Liste des bogues fermés et surveillés';
+$s_plugin_MantisStats_mostmon_in_single     = 'Plus grand nombre de moniteurs pour un seul bogue';
+$s_plugin_MantisStats_in_open_issues        = 'Dans les bogues ouverts';
+$s_plugin_MantisStats_in_resolved_iss       = 'Dans les bogues résolus';
+$s_plugin_MantisStats_in_all_issues         = 'Dans tous les bogues';
+$s_plugin_MantisStats_average_monitors      = 'Nombre moyen de moniteurs par bogues';
+$s_plugin_MantisStats_with_no_monitors      = 'Bogues sans surveillance';
+$s_plugin_MantisStats_issue_summary         = 'Résumé de bogue';
+$s_plugin_MantisStats_no_of_monitors        = 'Nombre utilisateurs surveillant les bogues';
+$s_plugin_MantisStats_all_with_without      = 'Graphiques des bogues avec ou sans surveillance';
+$s_plugin_MantisStats_with_monitors         = 'Avec surveillance';
+$s_plugin_MantisStats_without_monitors      = 'Sans surveillance';
+$s_plugin_MantisStats_mosthnd_in_single     = 'Plus grand nombre de responsables affectés pour un seul bogue';
+$s_plugin_MantisStats_average_handlers      = 'Nombre moyen de responsables';
+$s_plugin_MantisStats_never_assto_hnd       = 'Nombre de bogues jamais affectés';
+$s_plugin_MantisStats_currently_no_hnd      = 'Nombre de bogues actuellement sans affectation';
+$s_plugin_MantisStats_iss_open_top_hnd      = 'Liste des bogues ouverts avec le nombre de responsables';
+$s_plugin_MantisStats_iss_res_top_hnd       = 'Liste des bogues résolus avec le nombre de responsables';
+$s_plugin_MantisStats_no_of_handlers        = 'Nombre de responsables';
+$s_plugin_MantisStats_mostnt_in_single      = 'Nombre de notes maximales pour un bogue';
+$s_plugin_MantisStats_average_nt_periss     = 'Nombre moyen de notes par bogue';
+$s_plugin_MantisStats_no_iss_without_nt     = 'Nombre de bogues sans notes';
+$s_plugin_MantisStats_iss_open_top_nt       = 'Liste des bogues ouverts contenant des notes';
+$s_plugin_MantisStats_iss_res_top_nt        = 'Liste des bogues résolus contenant des notes';
+$s_plugin_MantisStats_no_of_notes           = 'Nombre de notes';
+$s_plugin_MantisStats_handler_name          = 'Nom du Responsable';
+$s_plugin_MantisStats_reporter_name         = 'Nom de Rapporteur';
+$s_plugin_MantisStats_top_monitors          = 'Liste des moniteurs';
+$s_plugin_MantisStats_name                  = 'Nom';
+$s_plugin_MantisStats_mon_open_issues       = 'Suivi des bogues ouverts';
+$s_plugin_MantisStats_mon_res_issues        = 'Suivi des bogues résolus';
+$s_plugin_MantisStats_mon_all_issues        = 'Suivi de tous les bogues';
+$s_plugin_MantisStats_top_mon_chart         = 'Classement des moniteurs';
+$s_plugin_MantisStats_top_note_adders       = 'Classement utilisateurs ajoutant des notes';
+$s_plugin_MantisStats_notes_open_issues     = 'Notes dans bogues ouverts';
+$s_plugin_MantisStats_notes_res_issues      = 'Notes dans bogues résolus';
+$s_plugin_MantisStats_notes_all_issues      = 'Notes dans tous les bogues';
+$s_plugin_MantisStats_top_note_add_chrt     = 'Classement des ajouts de notes';
+$s_plugin_MantisStats_by_date               = 'Par date';
+$s_plugin_MantisStats_daily                 = 'Quotidien';
+$s_plugin_MantisStats_weekly                = 'Hebdomadaire';
+$s_plugin_MantisStats_monthly               = 'Mensuel';
+$s_plugin_MantisStats_yearly                = 'Annuel';
+$s_plugin_MantisStats_open_vs_res_chrt      = 'Graphiques des bogues Ouverts vs. Résolu ';
+$s_plugin_MantisStats_notes                 = 'Notes';
+$s_plugin_MantisStats_notes_chart           = 'Graphiques sur les notes ';
+$s_plugin_MantisStats_res_radio_opt1        = '\'Résolu\' montre la résolution des bogues rapportés et résolus entre les dates ci-dessus';
+$s_plugin_MantisStats_res_radio_opt2        = '\'Résolu\' montre la résolution des bogues entres les date ci-dessus sans prendre en compte les dates de rapport';
+$s_plugin_MantisStats_note_wout_reop        = 'Si comptage comme une résolution multiple du même bogue dû à des réouvertures';
+$s_plugin_MantisStats_week_short            = 'sem.';
+$s_plugin_MantisStats_unknown               = 'Inconnu';
+$s_plugin_MantisStats_novalue               = 'No value';
+$s_plugin_MantisStats_by_custom_field       = 'By custom field';
+$s_plugin_MantisStats_by_custom_fields      = 'By custom fields';
+$s_plugin_MantisStats_by_custom_fields_long = 'Issues by custom fields';
+$s_plugin_MantisStats_by_etc                = 'Issues by &quot;%1$s&quot; custom field';
+$s_plugin_MantisStats_by_etc_chart          = 'All issues by &quot;%1$s&quot; custom field chart';
+$s_plugin_MantisStats_by_custom_fields_chrt = 'All issues by custom fields chart';
+$s_plugin_MantisStats_granularity           = 'Granularity';
+$s_plugin_MantisStats_info_handler_current  = 'This report shows number of issues currently assigned to an individual handler.';
+$s_plugin_MantisStats_info_handler_all      = 'This report shows number of times issues were (re-)assigned to an individual handler.';
+$s_plugin_MantisStats_times                 = 'Times';
+$s_plugin_MantisStats_time_new_pr_sv        = 'In \'new\' state';
+$s_plugin_MantisStats_time_new_pr_sv_long   = 'Time in \'new\' state';
+$s_plugin_MantisStats_time_new_top1         = 'Issues without status change';
+$s_plugin_MantisStats_time_new_top2         = 'Issues with status change';
+$s_plugin_MantisStats_info_waiting_new      = 'Times in \'new\' state for for reopened tickets (re-set to \'new\') are summed-up.';
+$s_plugin_MantisStats_assigned_time         = 'Time in \'assigned\'';
+$s_plugin_MantisStats_no_of_issues          = 'No of issues';
+$s_plugin_MantisStats_avg_time_in_assigned  = 'Average time in \'assigned\'';
