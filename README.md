@@ -13,6 +13,8 @@ refer to mantis_setup_v.3.0.xlsx -> Categories - Custom Fields tab
 
 <strong>Don't forget UTF-8 enconding on custom_strings_inc.php</strong>
 
+<strong>Don't forget break; on french in custom_strings_inc.php</strong>
+
 refer to mantis_setup_v.3.0.xlsx -> Categories - Custom Fields tab
 
 ### 4: Custom Access Levels:

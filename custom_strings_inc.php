@@ -59,25 +59,21 @@ switch( $g_active_language ) {
 		$s_ordirope_bug_button = 'Transférer';
         $s_email_notification_title_for_status_bug_ordirope = 'Le bug suivant est transféré chez ORDIROPE pour résolution.';
 
-        
         #Translation for custom status 61: Talentia =
 		$s_talentia_bug_title = 'Passage DI chez Talentia';
 		$s_talentia_bug_button = 'Transférer';
         $s_email_notification_title_for_status_bug_talentia = 'Le bug suivant est transféré chez TALENTIA pour résolution.';
-        
-		
+        		
         #Translation for custom status 65: Change Review =
         $s_change_review_bug_title = 'Arbitrage Amélioration';
 		$s_change_review_bug_button = 'Passer en Arbitrage';
-
 		$s_email_notification_title_for_status_bug_change_review = 'La demande d\' amélioration est passée en ARBITRAGE.';
         
-        #Translation for custom status 65: Change Review =
+        #Translation for custom status 70: Testing =
         $s_testing_bug_title = 'Mettre la DI à tester';
 		$s_testing_bug_button = 'A tester';
-
-		$s_email_notification_title_for_status_bug_testing = 'La DI est prête à être testée.';
-    
+		$s_email_notification_title_for_status_bug_testing = 'La DI est passée au statut A TESTER.';
+        break;
     
     default: # english
         /****************************
@@ -128,7 +124,7 @@ switch( $g_active_language ) {
         ****************************/
         
         #Translation of status:
-		$s_status_enum_string = '10:new,30:acknowledged,50:assigned,60:ordirope,61:talentia,65:change review,70:testing,80:resolved,90:closed';
+		$s_status_enum_string = '10:new,30:accepted,50:in progress,60:ordirope,61:talentia,65:change review,70:testing,80:waiting validation,90:closed';
         
         #Translation for custom status 60: Ordirope =
 		$s_ordirope_bug_title = 'Send bug details to Ordirope';
