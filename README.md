@@ -36,3 +36,8 @@ refer to mantis_setup_v.3.0.xlsx -> Standard Fields Customization tab
 ### 7: Update Config paraméters
 
 ### 8: Setup Config for Time Tracking
+
+### 9: Setup of plugins:
+    - The Poset => Nice look
+    - Mantis Stats => Stats
+    
