@@ -33,6 +33,22 @@ switch( $g_active_language ) {
         $s_developer_by_resolution = 'Hotliner par action Hotline';
         $s_resolve_bugs_conf_msg = 'Choisissez l\'action hotline';
     
+        /****************************************
+        * Customization of Severity             *
+        *****************************************/
+        $s_severity_enum_string = '10:Anomalie,20:Demande assistance,40:Demande amélioration';
+        $s_severity = 'Type Demande';
+        $s_select_severity = 'Sélectionner le type de demande';
+        $s_email_severity = 'Type Demande';
+        $s_by_severity = 'Par Type Demande';
+        $s_must_enter_severity  = 'Vous devez renseigner le type de Demande';
+        $s_with_minimum_severity = 'A partir du type de demande';
+        $s_update_severity_title = 'Mise à jour du type de demande';
+        $s_update_severity_msg = 'Choisissez le type de demande';
+        $s_update_severity_button = 'Mettre à jour le type de demande';
+        $s_actiongroup_menu_update_severity = 'Mettre à jour le type de demande';
+        
+    
     
     default: # english
         /****************************
@@ -63,6 +79,20 @@ switch( $g_active_language ) {
         $s_developer_by_resolution = 'Hotliner by Hotline Action';
         $s_resolve_bugs_conf_msg = 'Choose issues Action';
     
+        /****************************************
+        * Customization of Severity             *
+        *****************************************/
+        $s_severity_enum_string = '10:Incident,20:Service request,40:Improvement';
+        $s_severity = 'Request Type';
+        $s_select_severity = 'Select request type';
+        $s_email_severity = 'Request Type';
+        $s_by_severity = 'By Request Type';
+        $s_must_enter_severity  = 'You must select Request Type';
+        $s_with_minimum_severity = 'From Request Type';
+        $s_update_severity_title = 'Update Request Type';
+        $s_update_severity_msg = 'Choose Request Type';
+        $s_update_severity_button = 'Update Request Type';
+        $s_actiongroup_menu_update_severity = 'Update Request Type';
         
     break;
 }
