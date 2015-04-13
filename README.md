@@ -15,3 +15,10 @@ refer to mantis_setup_v.3.0.xlsx -> Categories - Custom Fields tab
 ### 4: Custom Access Levels:
 refer to mantis_setup_v.3.0.xlsx -> Standard Fields Customization tab
 
+
+### 5: Standard Fiels Customization:
+    - Reproducibility => Cause
+    - Resolution => Hotline Action
+    - Severity => Request Type
+refer to mantis_setup_v.3.0.xlsx -> Standard Fields Customization tab
+
