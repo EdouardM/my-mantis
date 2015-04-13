@@ -20,6 +20,19 @@ switch( $g_active_language ) {
         $s_select_reproducibility = 'Sélectionner la cause de DI';
         $s_must_enter_reproducibility = 'Vous devez sélectionner une cause.';
         $$s_email_reproducibility = 'Cause';
+        
+        /************************************
+        * Customization of Resolution       *
+        *************************************/
+        $s_resolution_enum_string = '10:Intervention programme,20:Extraction données,30:Action exploitation,40:Résolution fonctionnelle,50:A déterminer,60:Autre intervention technique,70:SQL - DFU - Mise à jour directe,80:Formation - Information';
+        $s_resolution = 'Action Hotline';
+        $s_reopen_resolution = '50:A déterminer';
+        $s_by_resolution = 'Par Action Hotline';
+        $s_email_resolution = 'Action Hotline';
+        $s_reporter_by_resolution = 'Demandeur par action Hotline';
+        $s_developer_by_resolution = 'Hotliner par action Hotline';
+        $s_resolve_bugs_conf_msg = 'Choisissez l\'action hotline';
+    
     
     default: # english
         /****************************
@@ -37,6 +50,19 @@ switch( $g_active_language ) {
         $s_select_reproducibility = 'Select Cause';
         $s_must_enter_reproducibility = 'You must select a cause.';
         $$s_email_reproducibility = 'Cause';
+        
+        /************************************
+        * Customization of Resolution       *
+        *************************************/
+        $s_resolution_enum_string = '10:Program update,20:Data extract,30:Exploitation action,40:Functional solution,50:To be set,60:Other tech. action,70:SQL - direct update,80:Training';
+        $s_resolution = 'Hotline Action';
+        $s_reopen_resolution = '50:To be set';
+        $s_by_resolution = 'By Hotline Action';
+        $s_email_resolution = 'Hotline Action';
+        $s_reporter_by_resolution = 'Reporter by Hotline Action';
+        $s_developer_by_resolution = 'Hotliner by Hotline Action';
+        $s_resolve_bugs_conf_msg = 'Choose issues Action';
+    
         
     break;
 }
