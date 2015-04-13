@@ -128,25 +128,23 @@ switch( $g_active_language ) {
         
         #Translation for custom status 60: Ordirope =
 		$s_ordirope_bug_title = 'Send bug details to Ordirope';
-		$s_ordirope_bug_button = 'Send';
-		$s_email_notification_title_for_status_bug_ordirope = 'The following issue is under INVESTIGATION with development team.';
+		$s_ordirope_bug_button = 'Transfer';
+		$s_email_notification_title_for_status_bug_ordirope = 'The following service request is now sent to ORDIROPE for resolution.';
         
         #Translation for custom status 61: Talentia =
 		$s_talentia_bug_title = 'Send bug details to Talentia';
-		$s_talentia_bug_button = 'Send';
-		$s_email_notification_title_for_status_bug_talentia = 'The following issue is under INVESTIGATION with development team.';
+		$s_talentia_bug_button = 'Transfer';
+		$s_email_notification_title_for_status_bug_talentia = 'The following service request is now sent to TALENTIA for resolution.';
 
         #Translation for custom status 65: Change Review =
-        $s_change_review_bug_title = 'Change Review';
-		$s_change_review_bug_button = 'Change review';
-
-		$s_email_notification_title_for_status_bug_change_review = 'The following change request is under EVALUATION.';
+        $s_change_review_bug_title = 'Request Change Review';
+		$s_change_review_bug_button = 'Put in Change review';
+		$s_email_notification_title_for_status_bug_change_review = 'The following change request is under CHANGE REVIEW.';
         
         #Translation for custom status 70: Testing =
-        $s_testing_bug_title = 'Mark issue Ready for Testing';
-		$s_testing_bug_button = 'Ready for Testing';
-
-		$s_email_notification_title_for_status_bug_testing = 'The following issue is ready for TESTING.';
+        $s_testing_bug_title = 'Transfer Request to Testing';
+		$s_testing_bug_button = 'Put in testing';
+		$s_email_notification_title_for_status_bug_testing = 'The following request is under TESTING.';
         
     break;
 }
