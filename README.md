@@ -12,3 +12,6 @@ refer to mantis_setup_v.3.0.xlsx -> Categories - Custom Fields tab
 ### 3: Custom Fields Setup:
 refer to mantis_setup_v.3.0.xlsx -> Categories - Custom Fields tab
 
+### 4: Custom Access Levels:
+refer to mantis_setup_v.3.0.xlsx -> Standard Fields Customization tab
+
