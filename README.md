@@ -27,5 +27,8 @@ refer to mantis_setup_v.3.0.xlsx -> Standard Fields Customization tab
     - Severity => Request Type
 refer to mantis_setup_v.3.0.xlsx -> Standard Fields Customization tab
 
-
-
+### 6: Status Update
+    - Update Constants
+    - Update enum
+    - Translation
+    - Workflow
