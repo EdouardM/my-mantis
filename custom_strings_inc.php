@@ -24,7 +24,7 @@ switch( $g_active_language ) {
         /************************************
         * Customization of Resolution       *
         *************************************/
-        $s_resolution_enum_string = '10:Intervention programme,20:Extraction données,30:Action exploitation,40:Résolution fonctionnelle,50:A déterminer,60:Autre intervention technique,70:SQL - DFU - Mise à jour directe,80:Formation - Information';
+        $s_resolution_enum_string = '10:A déterminer,20:Extraction données,30:Action exploitation,40:Résolution fonctionnelle,50:Intervention programme,60:Autre intervention technique,70:SQL - DFU - Mise à jour directe,80:Formation - Information';
         $s_resolution = 'Action Hotline';
         $s_reopen_resolution = '50:A déterminer';
         $s_by_resolution = 'Par Action Hotline';
@@ -33,6 +33,7 @@ switch( $g_active_language ) {
         $s_developer_by_resolution = 'Hotliner par action Hotline';
         $s_resolve_bugs_conf_msg = 'Choisissez l\'action hotline';
     
+
         /****************************************
         * Customization of Severity             *
         *****************************************/
@@ -75,6 +76,19 @@ switch( $g_active_language ) {
 		$s_email_notification_title_for_status_bug_testing = 'La DI est passée au statut A TESTER.';
         break;
     
+        /********************************
+        * Custom Fields Translation     *
+        *********************************/
+         
+        #Ordirope Number:
+        $s_Ordirope_Number = 'Numéro suivi Ordirope';
+        #Service:
+        $s_Service = 'Service Demandeur';
+        #Legacy Number:
+        $s_Legacy_Number = 'Ancien Numéro de suivi';
+        
+        
+    
     default: # english
         /****************************
         * Customization of Access   *
@@ -95,7 +109,7 @@ switch( $g_active_language ) {
         /************************************
         * Customization of Resolution       *
         *************************************/
-        $s_resolution_enum_string = '10:Program update,20:Data extract,30:Exploitation action,40:Functional solution,50:To be set,60:Other tech. action,70:SQL - direct update,80:Training';
+        $s_resolution_enum_string = '10:To be set,20:Data extract,30:Exploitation action,40:Functional solution,50:Program update,60:Other tech. action,70:SQL - direct update,80:Training';
         $s_resolution = 'Hotline Action';
         $s_reopen_resolution = '50:To be set';
         $s_by_resolution = 'By Hotline Action';
@@ -145,6 +159,17 @@ switch( $g_active_language ) {
         $s_testing_bug_title = 'Transfer Request to Testing';
 		$s_testing_bug_button = 'Put in testing';
 		$s_email_notification_title_for_status_bug_testing = 'The following request is under TESTING.';
+        
+        /********************************
+        * Custom Fields Translation     *
+        *********************************/
+         
+        #Ordirope Number:
+        $s_Ordirope_Number = 'Ordirope Number';
+        #Service:
+        $s_Service = 'Requesting Dept.';
+        #Legacy Number:
+        $s_Legacy_Number = 'Old Reference';
         
     break;
 }

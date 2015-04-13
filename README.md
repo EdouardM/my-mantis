@@ -34,3 +34,5 @@ refer to mantis_setup_v.3.0.xlsx -> Standard Fields Customization tab
     - Workflow
     
 ### 7: Update Config paraméters
+
+### 8: Setup Config for Time Tracking
