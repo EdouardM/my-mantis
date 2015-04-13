@@ -7,5 +7,8 @@ My Mantis Install
 refer to mantis_setup_v.3.0.xlsx -> projects tab
 
 ### 2: Categories Setup:
-refer to mantis_setup_v.3.0.xlsx -> Categories tab
+refer to mantis_setup_v.3.0.xlsx -> Categories - Custom Fields tab
+
+### 3: Custom Fields Setup:
+refer to mantis_setup_v.3.0.xlsx -> Categories - Custom Fields tab
 
