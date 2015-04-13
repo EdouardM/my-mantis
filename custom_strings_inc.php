@@ -74,7 +74,6 @@ switch( $g_active_language ) {
         $s_testing_bug_title = 'Mettre la DI à tester';
 		$s_testing_bug_button = 'A tester';
 		$s_email_notification_title_for_status_bug_testing = 'La DI est passée au statut A TESTER.';
-        break;
     
         /********************************
         * Custom Fields Translation     *
@@ -86,8 +85,7 @@ switch( $g_active_language ) {
         $s_Service = 'Service Demandeur';
         #Legacy Number:
         $s_Legacy_Number = 'Ancien Numéro de suivi';
-        
-        
+        break;
     
     default: # english
         /****************************

@@ -1,0 +1,26 @@
+.mantisLogo, .poserHeader {
+    display: none;
+}
+
+
+.tinyheader {
+    display: block !important;
+    float: left;
+    line-height: 0px;
+}
+.tinyheader span {
+    position: relative;
+    top: -3px;
+}
+
+td[class="menu right nowrap"] {
+    /*padding-right: 20px;*/
+}
+.login-info-right {
+    padding-right: 20px !important;
+}
+.tinyheader-right {
+    position: absolute;
+    right: 8px;
+    top: 1em;
+}

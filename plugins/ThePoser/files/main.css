@@ -1,0 +1,143 @@
+body {
+    background: url(plugins/ThePoser/files/img/bgmain.png);
+    color: #333;
+}
+
+table.width100 {
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+table.width100 td.menu {
+    border-radius: 3px;
+    
+    background: -moz-linear-gradient(top,  rgba(255,255,255,0.51) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.51)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,0.51) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,255,255,0.51) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,255,255,0.51) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,255,255,0.51) 0%,rgba(255,255,255,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#82ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+
+background-color: #e8e8e8;
+    color: #ccc;
+    text-shadow: 1px 0 #fff;
+}
+table.width100 td.menu a, .bracket-link>a, .category a, .row-category a, .small-caption a {
+    text-decoration: none;
+}
+html body a {
+    color: #46a;
+    
+    transition: 0.3s color; 
+}
+html body a:hover {
+    color: #04f;
+}
+html body .form-title a.subtle {
+    font-weight: normal;
+    color: #46a;
+    text-shadow: 1px 0 #fff;
+}
+html body .form-title, html body .form-title+.center, html body .form-title+.center+.right, html body .form-title+.right {
+    background: -moz-linear-gradient(top,  rgba(255,255,255,0.51) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.51)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,0.51) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,255,255,0.51) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,255,255,0.51) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,255,255,0.51) 0%,rgba(255,255,255,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#82ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+
+background-color: #e8e8e8;
+    color: #444;
+    font-weight: normal;
+}
+/*[bgcolor*="#"]*/
+tr td {
+    background-image: -moz-linear-gradient(top,  rgba(255,255,255,0.51) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.51)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+background-image: -webkit-linear-gradient(top,  rgba(255,255,255,0.51) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+background-image: -o-linear-gradient(top,  rgba(255,255,255,0.51) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+background-image: -ms-linear-gradient(top,  rgba(255,255,255,0.51) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+background-image: linear-gradient(to bottom,  rgba(255,255,255,0.51) 0%,rgba(255,255,255,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#82ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+html body b {
+    font-weight: normal;
+    opacity: 0.7;
+}
+td.category, .row-category>td {
+    font-weight: normal;
+    color: #333;
+    text-shadow: 1px 1px 2px #eee;
+}
+
+.tinyheader {
+    display: none;
+}
+.poserHeader {
+    float: right;
+
+    position: relative;
+    display: table-row;
+    vertical-align: middle;
+    padding-top: 6px;
+    padding-bottom: 0;
+}
+.poserHeader.poserNoAuth {
+    float: none;
+    text-align: right;
+    display: block;
+}
+.poserHeader a {
+    display: table-cell;
+    
+    vertical-align: middle;
+    height: 80px;
+}
+.poserHeader.poserNoAuth a{
+    display: block;
+}
+.poserHeader a img {
+    /*vertical-align: middle;*/
+    max-height: 100%;
+}
+div.mantisLogo {
+    padding: 0;
+}
+div.mantisLogo.poserNoAuth {
+    margin-top: -80px;
+}
+
+div.poserWarning {
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #faced0;
+}
+
+.poserConfig {
+    width: 90%;
+    margin: 30px auto;
+}
+.poserConfig textarea {
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+}
+.poserConfig .skin {
+    float: left;
+}
+.poserConfig .clear {
+    clear: both;
+}
+.poserConfig h3 {
+    margin-top: 0;
+}
+.poserConfig h2 {
+    font-weight: normal;
+    margin-bottom: 8px;
+}
+.poserConfig input[type='submit'] {
+    margin-top: 16px;
+    padding: 6px;
+}

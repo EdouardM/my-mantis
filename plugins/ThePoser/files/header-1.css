@@ -1,0 +1,9 @@
+body a[href="my_view_page.php"] img {
+    height: 50px;
+}
+.poserHeader a {
+    height: 50px;
+}
+div.mantisLogo.poserNoAuth {
+    margin-top: -50px;
+}
