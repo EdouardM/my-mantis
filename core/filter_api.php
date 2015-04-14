@@ -1985,7 +1985,8 @@ function filter_get_bug_rows( &$p_page_number, &$p_per_page, &$p_page_count, &$p
 				' OR ' . db_helper_like( "$t_bug_text_table.description" ) .
 				' OR ' . db_helper_like( "$t_bug_text_table.steps_to_reproduce" ) .
 				' OR ' . db_helper_like( "$t_bug_text_table.additional_information" ) .
-				' OR ' . db_helper_like( "$t_bugnote_text_table.note" );
+				' OR ' . db_helper_like( "$t_bugnote_text_table.note" ) .
+                ' OR ' . "($t_bug_table.id IN ( SELECT DISTINCT bug_id from " . db_get_table( 'mantis_custom_field_string_table' ) . " where value LIKE '%$c_search%'))";
 
 			$t_where_params[] = $c_search;
 			$t_where_params[] = $c_search;
