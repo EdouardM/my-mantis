@@ -1,0 +1,25 @@
+<?php
+   $s_plugin_CustomReports_custom_reports = 'Rapporten op maat';
+   $s_plugin_CustomReports_custom_report = 'Rapport op maat';
+   $s_plugin_CustomReports_configuration = 'Rapporten op maat: configuratie';
+   $s_plugin_CustomReports_load_report = 'Laad rapport';
+   $s_plugin_CustomReports_export_to_excel = 'Exporteer naar Excel';
+   $s_plugin_CustomReports_immediate_export = 'Onmiddellijk exporteren naar Excel';
+   $s_plugin_CustomReports_include_period_parameters = 'Periode als parameter';
+   $s_plugin_CustomReports_period_start = 'Begin periode';
+   $s_plugin_CustomReports_period_end = 'Einde periode';
+   $s_plugin_CustomReports_include_period_parameters_info = 'Hiermee kunt u van :period_start en :period_end in uw query gebruik maken. Bij het opvragen van dit rapport wordt een periode gevraagd.';
+
+   $s_plugin_CustomReports_add_new_report = 'Nieuw rapport toevoegen';
+   $s_plugin_CustomReports_report_name = 'Rapportnaam';
+   $s_plugin_CustomReports_view_threshold = 'Drempelwaarde voor bekijken';
+   $s_plugin_CustomReports_query = 'Query';
+
+   $s_plugin_CustomReports_manage_reports = 'Rapporten beheren';
+   $s_plugin_CustomReports_general_configuration = 'Configuratie plugin';
+   $s_plugin_CustomReports_admin_threshold = 'Drempelwaarde voor administratierechten';
+   $s_plugin_CustomReports_view_custom_reports_threshold = 'Drempelwaarde voor bekijken rapporten op maat';
+
+   $s_plugin_CustomReports_update_successful = 'Query succesvol aangepast.';
+   $s_plugin_CustomReports_query_invalid_keywords = 'Query mag enkel SELECT\'s bevatten en geen DDL of DCL keywords.';
+?>
