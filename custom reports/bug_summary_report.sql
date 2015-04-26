@@ -18,8 +18,9 @@ SELECT 	bug_t.id AS "ticket #",
             WHEN bug_t.status = 80 THEN "resolved"
             WHEN bug_t.status = 90 THEN "closed"
         END AS "status",
-        bug_t.summary AS "ticket summary",
         category_t.name AS "category",
+        bug_t.summary AS "title",
+        bugtext_t.description AS "description",
         DATE_FORMAT(FROM_UNIXTIME(bug_t.last_updated),"%d/%m/%Y") AS "last updated",
         DATE_FORMAT(FROM_UNIXTIME(bug_t.date_submitted),"%d/%m/%Y") AS "date submitted",
         GROUP_CONCAT(
@@ -29,13 +30,21 @@ SELECT 	bug_t.id AS "ticket #",
             SEPARATOR "|") AS "note history"
         
 FROM 	`mantis_bug_table` AS bug_t
+
+/* Jointure avec les projets */
 INNER JOIN `mantis_project_table` AS project_t ON bug_t.project_id = project_t.id
+
+/* Jointures user => Reporter & Hotliner */
 INNER JOIN `mantis_user_table` AS user_t ON
 bug_t.reporter_id = user_t.id
 INNER JOIN `mantis_user_table` AS user_t2 ON
 bug_t.handler_id = user_t2.id
 INNER JOIN `mantis_category_table` AS category_t ON
 bug_t.category_id = category_t.id
+
+/* Jointure description bug */
+INNER JOIN `mantis_bug_text_table` AS bugtext_t ON
+bug_t.bug_text_id = bugtext_t.id
 
 /* Jointure avec les notes */
 RIGHT OUTER JOIN `mantis_bugnote_table` AS bugnote_t ON
