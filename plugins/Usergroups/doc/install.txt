@@ -1,0 +1,66 @@
+########################################################
+# 	Mantis Bugtracker Add-On
+# 	Usergroups Version 1.20
+#	2012 plugin by Cas Nuy www.NUY.info
+#
+#   To be used only with Tasks plugin 2.40 and above !!! 
+#
+########################################################
+
+This plugin allows to assign users to multiple groups.
+
+The tasks plugin should be configured to work in Group mode
+
+When assigning a task, one can choose one of the defined groups.
+Each member of that group will receive an email of the assigned task.
+The person that closes the task will registered as responsible for the task results.
+
+********************************************************************************************
+* Installation                                                                             *
+********************************************************************************************
+Do ensure to define a signal in manage_user_edit_page.php.
+Add the following line :
+	event_signal( 'EVENT_MANAGE_USER_FORM'); 
+Just before :
+	include ( 'account_prefs_inc.php' );
+
+Also ensure to define a signal in manage_user_delete.php.
+Add the following line :
+	event_signal( 'EVENT_ACCOUNT_DELETED', $f_user_id ); 
+Just before :
+	form_security_purge('manage_user_delete');
+
+Finally ensure to define a signal in account_delete.php.
+Add the following line :
+	event_signal( 'EVENT_ACCOUNT_DELETED', $f_user_id ); 
+Just before :
+	html_page_top1();
+
+	
+The rest is like any other plugin. 
+After copying to your webserver :
+- Start mantis ad administrator
+- Select manage
+- Select manage Plugins
+- Select Install behind Usergroups 1.00
+- Once installed, click on the plugin-name for further configuration, ie creation of groups.
+
+Now configure the Tasks plugin to work with Groups.
+- Select manage
+- Select manage Plugins
+- Click on the Tasks plugin and adjust setting to use groups and not users.
+
+Update to 1.01
+ALTER TABLE `mantis_plugin_usergroups_groups_table` ADD `group_mail` CHAR( 50 ) NOT NULL 
+
+********************************************************************************************
+License                                                                                    *
+********************************************************************************************
+This plugin is distributed under the same conditions as Mantis itself.
+
+********************************************************************************************
+Greetings                                                                                  *
+********************************************************************************************
+Cas Nuy 
+cas@nuy.info
+http://www.nuy.info

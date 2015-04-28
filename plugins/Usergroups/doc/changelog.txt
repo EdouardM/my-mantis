@@ -1,0 +1,5 @@
+Version 1.00		16-09-2012	Initial release
+Version 1.01				Added email address for groups
+Version 1.11				Made events more generic
+Version 1.20		04-03-2014	Added option to see memberlist in management section
+								Added options for maintaining groups in management section

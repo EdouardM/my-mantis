@@ -1,0 +1,24 @@
+<?php
+$s_usergroups_description			= "Connect user to multiple groups";
+$s_add_usergroup_title				= "Connect user to groups";
+$s_assigned_groups					= "Connected groups";
+$s_unassigned_groups				= "Available groups";
+$s_add_group_button					= "Add group";
+
+$s_allgroups						= "All defined groups";
+$s_groupname						= "Name";
+$s_groupdesc						= "Description";
+$s_groupactions						= "Actions";
+$s_groupdelete						= "Delete";
+$s_groupedit						= "Edit";
+$s_groupsubmit						= "Add Group";
+$s_groupmail						= "Group Email address";
+$s_groupmemberdelete				= "Remove user from group";
+$s_addmembers						= "Add members to group";
+
+$s_usergroups_enabled				= "Yes";
+$s_usergroups_disabled			= "No";
+$s_mailtogroup					= "Send mail to group, not to group members ( only if mail address available)";
+
+$MANTIS_ERROR[ERROR_USERGROUP_EXISTS] = 'Cannot add group, this one is already available.';  
+$MANTIS_ERROR[ERROR_USERGROUP_ACTIVE] = 'Cannot delete group, this one is still in use.';  
