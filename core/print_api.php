@@ -246,7 +246,10 @@ function print_user_option_list( $p_user_id, $p_project_id = null, $p_access = A
 	} else {
 		$t_users = project_get_all_user_rows( $p_project_id, $p_access );
 	}
-
+    /* Addition for ManageUserGroups plugin */
+    $t_users = event_signal('EVENT_GROUP_PROJECT_GET_ALL_USER_ROWS', array($t_users));
+    ##
+    
 	$t_display = array();
 	$t_sort = array();
 	$t_show_realname = ( ON == config_get( 'show_realname' ) );

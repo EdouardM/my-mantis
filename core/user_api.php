@@ -833,7 +833,10 @@ function user_get_access_level( $p_user_id, $p_project_id = ALL_PROJECTS ) {
 	if( user_is_administrator( $p_user_id ) ) {
 		return $t_access_level;
 	}
-
+    
+    /* Addition for ManageUserGroups plugin */
+    $p_user_id = event_signal('EVENT_GROUP_ACCESS_HAS_BUG_LEVEL', array(array(access_get_global_level( $p_user_id ), $p_user_id, $p_project_id)));
+    ##
 	$t_project_access_level = project_get_local_user_access_level( $p_project_id, $p_user_id );
 
 	if( false === $t_project_access_level ) {

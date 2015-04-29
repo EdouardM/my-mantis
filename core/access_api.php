@@ -291,7 +291,10 @@ function access_get_project_level( $p_project_id = null, $p_user_id = null ) {
 	if( null === $p_project_id ) {
 		$p_project_id = helper_get_current_project();
 	}
-
+    /*Addition for ManageUserGroups Plugin */
+    $p_user_id = event_signal('EVENT_GROUP_ACCESS_HAS_BUG_LEVEL', array(array(access_get_global_level( $p_user_id ), $p_user_id, $p_project_id)));
+    ##
+    
 	$t_global_access_level = access_get_global_level( $p_user_id );
 
 	if( ALL_PROJECTS == $p_project_id || user_is_administrator( $p_user_id ) ) {
@@ -422,7 +425,12 @@ function access_has_bug_level( $p_access_level, $p_bug_id, $p_user_id = null ) {
 
 	# check limit_Reporter (Issue #4769)
 	# reporters can view just issues they reported
-	$t_limit_reporters = config_get( 'limit_reporters', null, $p_user_id, $t_project_id );
+	
+    /*Addition for ManageUserGroups plugin */
+    $p_user_id = event_signal('EVENT_GROUP_ACCESS_HAS_BUG_LEVEL', array(array(access_get_project_level( $t_project_id, $p_user_id ), $p_user_id, $t_project_id)));
+    ##
+    
+    $t_limit_reporters = config_get( 'limit_reporters', null, $p_user_id, $t_project_id );
 	if( $t_limit_reporters && !$t_bug_is_user_reporter ) {
 		# Here we only need to check that the current user has an access level
 		# higher than the lowest needed to report issues (report_bug_threshold).
