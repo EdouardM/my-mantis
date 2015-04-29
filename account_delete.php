@@ -74,9 +74,6 @@ auth_logout();
 
 user_delete( $t_user_id );
 
-/*Addition for UserGroup plugin */
-event_signal( 'EVENT_ACCOUNT_DELETED', $f_user_id );
-##
 html_page_top1();
 html_page_top2a();
 

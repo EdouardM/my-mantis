@@ -58,10 +58,7 @@
 		lang_get( 'delete_account_button' ) );
 
 	user_delete( $f_user_id );
-        
-    /*Addition for UserGroup plugin */    
-    event_signal( 'EVENT_ACCOUNT_DELETED', $f_user_id );
-    ##
+
 	form_security_purge('manage_user_delete');
 
 	html_page_top( null, 'manage_user_page.php' );
