@@ -288,7 +288,10 @@
 </div>
 <?php
 	} # End of PROJECT ACCESS conditional section
-
+    /* Addition for UserGroup plugin */
+    event_signal( 'EVENT_MANAGE_USER_FORM'); 
+    ##
+    
     include ( 'account_prefs_inc.php' );
 	edit_account_prefs( $t_user['id'], false, false, 'manage_user_edit_page.php?user_id=' . $t_user_id );
 
