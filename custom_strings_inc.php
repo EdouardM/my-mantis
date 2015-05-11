@@ -1,8 +1,8 @@
-﻿<?php
+<?php
 # Translation for Custom Status Code: testing
 switch( $g_active_language ) {
 
-	case 'french':
+    case 'french':
     
         /****************************
         * Customization of Access   *
@@ -53,27 +53,27 @@ switch( $g_active_language ) {
         * Customization of Status   *
         ****************************/
         #Translation of status:
-		$s_status_enum_string = '10:nouveau,30:accepté,50:en cours,60:ordirope,61:talentia,65:arbitrage,70:à tester,80:à valider,90:fermé';
+        $s_status_enum_string = '10:nouveau,30:accepté,50:en cours,60:ordirope,61:talentia,65:arbitrage,70:à tester,80:à valider,90:fermé';
 
         #Translation for custom status 60: Ordirope =
-		$s_ordirope_bug_title = 'Passage DI chez Ordirope';
-		$s_ordirope_bug_button = 'Transférer';
+        $s_ordirope_bug_title = 'Passage DI chez Ordirope';
+        $s_ordirope_bug_button = 'Transférer';
         $s_email_notification_title_for_status_bug_ordirope = 'Le bug suivant est transféré chez ORDIROPE pour résolution.';
 
         #Translation for custom status 61: Talentia =
-		$s_talentia_bug_title = 'Passage DI chez Talentia';
-		$s_talentia_bug_button = 'Transférer';
+        $s_talentia_bug_title = 'Passage DI chez Talentia';
+        $s_talentia_bug_button = 'Transférer';
         $s_email_notification_title_for_status_bug_talentia = 'Le bug suivant est transféré chez TALENTIA pour résolution.';
-        		
+
         #Translation for custom status 65: Change Review =
         $s_change_review_bug_title = 'Arbitrage Amélioration';
-		$s_change_review_bug_button = 'Passer en Arbitrage';
-		$s_email_notification_title_for_status_bug_change_review = 'La demande d\' amélioration est passée en ARBITRAGE.';
+        $s_change_review_bug_button = 'Passer en Arbitrage';
+        $s_email_notification_title_for_status_bug_change_review = 'La demande d\' amélioration est passée en ARBITRAGE.';
         
         #Translation for custom status 70: Testing =
         $s_testing_bug_title = 'Mettre la DI à tester';
-		$s_testing_bug_button = 'A tester';
-		$s_email_notification_title_for_status_bug_testing = 'La DI est passée au statut A TESTER.';
+        $s_testing_bug_button = 'A tester';
+        $s_email_notification_title_for_status_bug_testing = 'La DI est passée au statut A TESTER.';
     
         /********************************
         * Custom Fields Translation     *
@@ -136,27 +136,27 @@ switch( $g_active_language ) {
         ****************************/
         
         #Translation of status:
-		$s_status_enum_string = '10:new,30:accepted,50:in progress,60:ordirope,61:talentia,65:change review,70:testing,80:waiting validation,90:closed';
+        $s_status_enum_string = '10:new,30:accepted,50:in progress,60:ordirope,61:talentia,65:change review,70:testing,80:waiting validation,90:closed';
         
         #Translation for custom status 60: Ordirope =
-		$s_ordirope_bug_title = 'Send bug details to Ordirope';
-		$s_ordirope_bug_button = 'Transfer';
-		$s_email_notification_title_for_status_bug_ordirope = 'The following service request is now sent to ORDIROPE for resolution.';
+        $s_ordirope_bug_title = 'Send bug details to Ordirope';
+        $s_ordirope_bug_button = 'Transfer';
+        $s_email_notification_title_for_status_bug_ordirope = 'The following service request is now sent to ORDIROPE for resolution.';
         
         #Translation for custom status 61: Talentia =
-		$s_talentia_bug_title = 'Send bug details to Talentia';
-		$s_talentia_bug_button = 'Transfer';
-		$s_email_notification_title_for_status_bug_talentia = 'The following service request is now sent to TALENTIA for resolution.';
+        $s_talentia_bug_title = 'Send bug details to Talentia';
+        $s_talentia_bug_button = 'Transfer';
+        $s_email_notification_title_for_status_bug_talentia = 'The following service request is now sent to TALENTIA for resolution.';
 
         #Translation for custom status 65: Change Review =
         $s_change_review_bug_title = 'Request Change Review';
-		$s_change_review_bug_button = 'Put in Change review';
-		$s_email_notification_title_for_status_bug_change_review = 'The following change request is under CHANGE REVIEW.';
+        $s_change_review_bug_button = 'Put in Change review';
+        $s_email_notification_title_for_status_bug_change_review = 'The following change request is under CHANGE REVIEW.';
         
         #Translation for custom status 70: Testing =
         $s_testing_bug_title = 'Transfer Request to Testing';
-		$s_testing_bug_button = 'Put in testing';
-		$s_email_notification_title_for_status_bug_testing = 'The following request is under TESTING.';
+        $s_testing_bug_button = 'Put in testing';
+        $s_email_notification_title_for_status_bug_testing = 'The following request is under TESTING.';
         
         /********************************
         * Custom Fields Translation     *
