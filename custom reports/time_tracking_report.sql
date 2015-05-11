@@ -14,3 +14,4 @@ bugnote_t.reporter_id = user_t.id
 WHERE bugnote_t.time_tracking <> 0
 
 GROUP BY bugnote_t.reporter_id, bugnote_t.bug_id
+    
