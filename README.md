@@ -39,10 +39,14 @@ refer to mantis_setup_v.3.0.xlsx -> Standard Fields Customization tab
 
 ### 9: Setup of plugins:
     - The Poser => Nice look
+    - jQuery => Useful for custom Reports
     - ArraytoExcel => Depency for Custom Report
     - Custom Reports=> Report
     - ManageUserGroup => To have grouping of users, useful for stats it will replace custom field Service
+            - Requires to update 3 files
     - Pokret Billing => Efficient time tracking solution
+            - Requires to turn off standard time-tacking in Mantis configuration
+            
     
 
  
