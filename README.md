@@ -38,6 +38,11 @@ refer to mantis_setup_v.3.0.xlsx -> Standard Fields Customization tab
 ### 8: Setup Config for Time Tracking
 
 ### 9: Setup of plugins:
-    - The Poset => Nice look
-    - Mantis Stats => Stats
+    - The Poser => Nice look
+    - ArraytoExcel => Depency for Custom Report
+    - Custom Reports=> Report
+    - ManageUserGroup => To have grouping of users, useful for stats it will replace custom field Service
+    - Pokret Billing => Efficient time tracking solution
     
+
+ 
