@@ -1,0 +1,61 @@
+<?php
+
+/**
+ * Copyright © 2013 Andrej Pavlovic. All rights reserved.
+ *
+ * This code may not be used, copied, modified, sold, or extended without written
+ * permission from Andrej Pavlovic (andrej.pavlovic@pokret.org).
+ */
+
+$s_plugin_PokretBilling_ = '';
+$s_plugin_PokretBilling_title = 'Pokret Billing';
+$s_plugin_PokretBilling_description = 'Allows for choosing which time is billable and generating reports.';
+
+
+$s_plugin_PokretBilling_configuration_report = 'Report Configuration';
+$s_plugin_PokretBilling_configuration_field = 'Field Configuration';
+$s_plugin_PokretBilling_report_enabled = 'Report Tab (Enabled/Threshold)';
+$s_plugin_PokretBilling_report_tab_title = 'Report Tab Title';
+$s_plugin_PokretBilling_time_tracking_enabled = 'Time Tracking Field (Enabled/Threshold)';
+$s_plugin_PokretBilling_multiplier_enabled = 'Multiplier Field (Enabled/Threshold)';
+$s_plugin_PokretBilling_adjustment_enabled = 'Adjustment Field (Enabled/Threshold)';
+$s_plugin_PokretBilling_billable_enabled = 'Billable Field (Enabled/Threshold)';
+$s_plugin_PokretBilling_billed_enabled = 'Billed Field (Enabled/Threshold)';
+$s_plugin_PokretBilling_reviewed_enabled = 'Reviewed Field (Enabled/Threshold)';
+$s_plugin_PokretBilling_update_configuration = 'Update Configuration';
+
+$s_plugin_PokretBilling_multiplier = 'Billing Multiplier';
+$s_plugin_PokretBilling_adjustment = 'Billing Adjustment';
+$s_plugin_PokretBilling_billable = 'Is Billable?';
+$s_plugin_PokretBilling_billed = 'Has Been Billed?';
+$s_plugin_PokretBilling_reviewed = 'Has Been Reviewed?';
+
+$s_plugin_PokretBilling_name_billable = 'Billable';
+$s_plugin_PokretBilling_name_reviewed = 'Reviewed';
+$s_plugin_PokretBilling_name_billed = 'Billed';
+
+$s_plugin_PokretBilling_label_time = 'Time:';
+$s_plugin_PokretBilling_label_multiplier = 'Multipler:';
+$s_plugin_PokretBilling_label_adjustment = 'Adjustment:';
+$s_plugin_PokretBilling_label_billable = 'Billable:';
+$s_plugin_PokretBilling_label_reviewed = 'Reviewed:';
+$s_plugin_PokretBilling_label_billed = 'Billed:';
+$s_plugin_PokretBilling_label_total_time = 'Total Time:';
+$s_plugin_PokretBilling_label_total_adjusted_time = 'Total Adjusted Time:';
+$s_plugin_PokretBilling_label_total_billable_time = 'Total Billable Time:';
+
+$s_plugin_PokretBilling_hhmm = 'HH:MM';
+
+$s_plugin_PokretBilling_report = 'Pokret Billing';
+$s_plugin_PokretBilling_report_filter = 'Report Filter';
+$s_plugin_PokretBilling_report_user = 'User';
+$s_plugin_PokretBilling_report_project = 'Project';
+$s_plugin_PokretBilling_report_exclude_subprojects = 'Exclude Subprojects';
+$s_plugin_PokretBilling_report_format = 'Output Format';
+$s_plugin_PokretBilling_report_format_html = 'HTML';
+$s_plugin_PokretBilling_report_format_xlsx = 'Excel';
+$s_plugin_PokretBilling_report_button_submit = 'Submit';
+$s_plugin_PokretBilling_report_error_invalid_start_date = 'Invalid start date.';
+$s_plugin_PokretBilling_report_error_invalid_end_date = 'Invalid end date.';
+$s_plugin_PokretBilling_report_error_no_records_found = 'No records found.';
+$s_plugin_PokretBilling_report_success_bug_notes_updated = '%1$s bug note(s) updated.';
