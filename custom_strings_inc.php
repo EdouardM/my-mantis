@@ -53,8 +53,14 @@ switch( $g_active_language ) {
         * Customization of Status   *
         ****************************/
         #Translation of status:
-        $s_status_enum_string = '10:nouveau,30:accepté,50:en cours,60:ordirope,61:talentia,65:arbitrage,70:à tester,80:à valider,90:fermé';
+        $s_status_enum_string = '10:nouveau,30:accepté,50:en cours,55:action utilisateur,60:ordirope,61:talentia,65:arbitrage,68:cahier des charges,70:à tester,80:à valider,90:fermé';
 
+        #Translation for custom status 55: Action utilisateur =
+        $s_user_action_bug_title = 'Attente action utilisateur';
+        $s_user_action_bug_button = 'Transférer';
+        $s_email_notification_title_for_status_bug_user_action = 'Le bug suivant nécessite une ACTION de votre part pour sa résolution.';
+        
+        
         #Translation for custom status 60: Ordirope =
         $s_ordirope_bug_title = 'Passage DI chez Ordirope';
         $s_ordirope_bug_button = 'Transférer';
@@ -70,11 +76,21 @@ switch( $g_active_language ) {
         $s_change_review_bug_button = 'Passer en Arbitrage';
         $s_email_notification_title_for_status_bug_change_review = 'La demande d\' amélioration est passée en ARBITRAGE.';
         
+        #Translation for custom status 68: Specfication =
+        $s_specification_bug_title = 'Construction cahier des charges';
+        $s_specification_bug_button = 'Transférer';
+        $s_email_notification_title_for_status_bug_specification = 'La demande d\' amélioration est approuvée. Elle nécessite un CAHIER DES CHARGES.';
+        
         #Translation for custom status 70: Testing =
         $s_testing_bug_title = 'Mettre la DI à tester';
         $s_testing_bug_button = 'A tester';
         $s_email_notification_title_for_status_bug_testing = 'La DI est passée au statut A TESTER.';
     
+        #Translation for custom status 80: Waiting validation =
+        $s_waiting_validation_bug_title = 'Passer à Valider';
+        $s_testing_bug_button = 'A valider';
+        $s_email_notification_title_for_status_bug_waiting_validation = 'Votre demande est A VALIDER. Si vous validez la résolution proposée, fermez le ticket sinon ouvre le à nouveau.';
+        
         /********************************
         * Custom Fields Translation     *
         *********************************/
@@ -136,7 +152,12 @@ switch( $g_active_language ) {
         ****************************/
         
         #Translation of status:
-        $s_status_enum_string = '10:new,30:accepted,50:in progress,60:ordirope,61:talentia,65:change review,70:testing,80:waiting validation,90:closed';
+        $s_status_enum_string = '10:new,30:accepted,50:in progress,55: user action,60:ordirope,61:talentia,65:change review,68:specification,70:testing,80:waiting validation,90:closed';
+
+        #Translation for custom status 55: User Action =
+        $s_user_action_bug_title = 'Awaiting user action';
+        $s_user_action_bug_button = 'Transfer';
+        $s_email_notification_title_for_status_bug_user_action = 'The following ticket requires one ACTION from you to progress in its resolution.';
         
         #Translation for custom status 60: Ordirope =
         $s_ordirope_bug_title = 'Send bug details to Ordirope';
@@ -153,10 +174,20 @@ switch( $g_active_language ) {
         $s_change_review_bug_button = 'Put in Change review';
         $s_email_notification_title_for_status_bug_change_review = 'The following change request is under CHANGE REVIEW.';
         
+        #Translation for custom status 68: Specfication =
+        $s_specification_bug_title = 'Specification';
+        $s_specification_bug_button = 'Transfer';
+        $s_email_notification_title_for_status_bug_specification = 'The following change request is approved. A SPECIFICATION is required.';
+        
         #Translation for custom status 70: Testing =
         $s_testing_bug_title = 'Transfer Request to Testing';
         $s_testing_bug_button = 'Put in testing';
         $s_email_notification_title_for_status_bug_testing = 'The following request is under TESTING.';
+        
+        #Translation for custom status 80: Waiting validation =
+        $s_waiting_validation_bug_title = 'Put Waiting for Validation';
+        $s_waiting_validation_bug_button = 'Resolve';
+        $s_email_notification_title_for_status_bug_waiting_validation = 'The following request is now WAITING FOR VALIDATION. Please close the ticket if it is resolved or reopen it.';
         
         /********************************
         * Custom Fields Translation     *
